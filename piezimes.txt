@@ -1,0 +1,30 @@
+<style>
+.josla {
+
+	height:9px;
+	background-color:transparent;
+	margin-top:50px;
+	margin-left:1px;
+	border-width: 1px;
+	border-radius: 6px;
+	border-style: solid;
+	border-color: transparent;
+} 
+
+</style>
+
+
+<style>
+.josla {
+
+	height:9px;
+	background-color:transparent;
+	margin-top:50px;
+	margin-left:1px;
+	border-width: 1px;
+	border-radius: 6px;
+	border-style: solid;
+	border-color: transparent;
+} 
+
+</style>

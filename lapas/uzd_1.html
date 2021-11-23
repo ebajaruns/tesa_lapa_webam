@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Tests ģeogrāfijā</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../stils.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+
+<div class="top">
+  <h1>Tests ģeogrāfijā</h1>
+autors: Kaspars Kiris<br><br>
+
+<p id="punkti"></p>
+</div> 
+<h1>Vieta attēlam</h1>
+mazias tektssss?<br><br>
+ 
+ <div class="kreisa">
+
+ </div>
+  
+<div class="vidus">
+
+<form>
+<p> 1.Jautājums: Kāpēc te ir upe? </p>
+<input type="radio" id="1" name="upe" value="daugava">
+<label for="1">Daugava</label><br>
+<input type="radio" id="2" name="upe" value="gauja">
+<label for="2">Gauja</label><br>
+<input type="radio" id="3" name="upe" value="abava">
+<label for="3">Abava</label><br>
+<input type="radio" id="4" name="upe" value="salaca">
+<label for="4">Salaca</label><br>
+
+</form>
+
+
+
+</div>
+<button class="button" onclick="nakamais()">APSTIPRINĀT</button>
+
+<br>
+
+<script>
+var balles=localStorage.getItem("punkti");
+document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 10 punktiem";
+
+function nakamais()
+{
+var x = document.getElementById("2").checked;
+
+if(x==true)window.open("uzd_2.html", "_self");
+else{
+balles--;
+localStorage.setItem("punkti", balles);
+window.open("uzd_2.html", "_self");
+}
+}
+</script>
+
+<div class="josla" style="width:30%;"></div>
+<div class="josla2" style="width:100%;"></div>
+
+
+</body>
+</html>

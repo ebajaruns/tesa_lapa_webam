@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Tests ģeogrāfijā</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../stils.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+
+<div class="top">
+  <h1>Tests ģeogrāfijā</h1>
+autors: Kaspars Kiris<br><br>
+
+<p id="punkti"></p>
+</div> 
+<h1>Vieta attēlam</h1>
+mazias tektssss?<br><br>
+ 
+ <div class="kreisa">
+
+ </div>
+  
+<div class="vidus">
+
+<form>
+<p> 4.Jautājums: Vairākas izvēles - kas no visa ir Fizika? </p>
+<input type="checkbox" id="1" name="randoms" value="Pitagors">
+<label for="Pitagors">Pitagors</label><br>
+<input type="checkbox" id="2" name="randoms" value="Nutons">
+<label for="Nutons">Ņūtons</label><br>
+<input type="checkbox" id="3" name="randoms" value="Kelvins">
+<label for="Kelvins">Kelvins</label><br>
+<input type="checkbox" id="4" name="randoms" value="Dinozaurs">
+<label for="Dinozaurs">Dinozaurs</label><br>
+
+</form>
+
+
+
+</div>
+<button class="button" onclick="nakamais()">APSTIPRINĀT</button>
+
+<br>
+
+<script>
+var balles=localStorage.getItem("punkti");
+document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 10 punktiem";
+
+function nakamais()
+{
+var x1 = document.getElementById("1").checked;
+var x2 = document.getElementById("2").checked;
+var x3 = document.getElementById("3").checked;
+var x4 = document.getElementById("4").checked;
+
+var n=0;
+
+if (x1==true) n=n+0.25;
+
+
+if(x==true && y==true)window.open("gameover.html", "_self");
+else{
+balles--;
+localStorage.setItem("punkti", balles);
+window.open("uzd_1.html", "_self");
+}
+}
+</script>
+
+<div class="josla" style="width:30%;"></div>
+<div class="josla2" style="width:100%;"></div>
+
+
+</body>
+</html>
