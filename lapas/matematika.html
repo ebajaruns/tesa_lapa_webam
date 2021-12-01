@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>AMPM</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../stils.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="matematika.html">Matemātika</a>
+        <a href="#">Latviešu valoda</a>
+        <a href="#">Angļu valoda</a>
+        <a href="#">Fizika</a>
+        <a href="#">Ķīmija</a>
+        <a href="#">Programmēšana</a>
+      </div>
+
+      <div id="mySidenav2" class="sidenav2">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+        <a href="../index.html">Lietotāja profils</a>
+        <a href="#">Pašvērtējums</a>
+        <a href="uzdevumi.html">Uzdevumi</a>
+        <a href="#">Padomi</a>
+        <a href="#">Statistika</a>
+      </div>
+<div id="main">
+
+<div class="top">
+
+
+<div class="tops">
+<span style="font-size:30px;cursor:pointer" onclick="openNav2()">&#9776; Edgars Bajaruns</span>
+<p></p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Mācību priekšmeti</span>
+</div>
+
+<div class="tops">
+    <h1>Matemātika</h1>
+ Aizraujošs priekšmets, kas kutina nervus!<br><br>
+ <!--- <p id="punkti"></p> -->
+  </div>
+
+</div> 
+
+
+
+
+ 
+ <div class="kreisa">   
+
+<!--- <img src="atteli\logo.png" alt="logo" styel="width:100%"> --->
+
+
+</div> 
+
+  
+<div  class="vidus">
+
+<span class="c">CE uzdevumi</span>
+<span class="c">Pašvērtējums</span>
+<span class="c">Palīdzība</span>
+<span class="c">Statistika</span>
+
+</div>
+
+<!--- <button class="button" onclick="nakamais()">APSTIPRINĀT</button> --->
+
+</div>
+
+<br>
+
+<script>
+localStorage.setItem("punkti", 10);
+document.getElementById("punkti").innerHTML ="Tev sākumā tiek piešķirti 10 punkti";
+
+function nakamais()
+{
+window.open("/lapas/uzd_1.html", "_self"); 
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+
+function openNav2() {
+  document.getElementById("mySidenav2").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav2() {
+  document.getElementById("mySidenav2").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+
+</script>
+
+<div class="josla" style="width:100%;"></div>
+<div class="josla2" style="width:100%;"></div>
+
+
+</body>
+</html>
