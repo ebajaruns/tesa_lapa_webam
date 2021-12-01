@@ -41,7 +41,7 @@
 </div>
 
 <div class="tops">
-    <h1>Matemātikas uzdevums nr.2</h1>
+    <h1>Matemātikas uzdevums nr.4</h1>
        
  <br>
 <p id="punkti"></p> 
@@ -55,7 +55,7 @@
  
  <div class="kreisa">   
 
-<!--- <img src="atteli\logo.png" alt="logo" styel="width:100%"> --->
+  <img src="..\atteli\grafiks1.PNG" alt="grafiks" style="height: 300px;" > 
 
 
 </div> 
@@ -64,12 +64,22 @@
 <div  class="vidus">
 
   <form>
-    <p> Aprēķini izteiksmes 5*3/4 aptuveno vērtību, izmantojot kalkulatoru. <br>
-       Rezultātu noapaļo ar precizitāti līdz desmitdaļām <br>
+    <p> Grafiski (1. attēls) attēlots kādas pilsētas iedzīvotāju skaits S atkarībā
+      no n, <br>
+      kur n – desmitgažu skaits kopš 1980. gada. <br>
        <br>
-       <br>
-
-       <input type="text" id="teksts" Value="ievadi izteiksmi">
+      Kuri no apgalvojumiem par grafiku ir patiesi? 
+    </p>
+    <label for="Pitagors">
+    <input type="checkbox" id="1" name="randoms" value="Pitagors">
+Iedzīvotāju skaita pieeaugums no 1980. līdz 2010.gadam ir 70000</label>
+<label for="Nutons"> <input type="checkbox" id="2" name="randoms" value="Nutons">
+Ņūtons</label>
+<label for="Kelvins"> <input type="checkbox" id="3" name="randoms" value="Kelvins">
+Kelvins</label>
+<label for="Dinozaurs"> <input type="checkbox" id="4" name="randoms" value="Dinozaurs">
+Dinozaurs</label>
+   
     
     </form>
   
@@ -87,14 +97,13 @@ document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 
 
 function nakamais()
 {
-  var x = document.getElementById("teksts").value;
+var x = document.getElementById("2").checked;
 
-if(x == "3.3" || x == "3,3" )window.open("uzdevums3.html", "_self");
-
+if(x==true)window.open("uzdevums2.html", "_self");
 else{
 balles--;
 localStorage.setItem("punkti", balles);
-window.open("uzdevums3.html", "_self");
+window.open("uzdevums2.html", "_self");
 }
 }
 
@@ -124,7 +133,7 @@ function closeNav2() {
 
 </script>
 
-<div class="josla" style="width:20%;"></div>
+<div class="josla" style="width:10%;"></div>
 <div class="josla2" style="width:100%;"></div>
 
 

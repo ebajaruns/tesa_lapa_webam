@@ -64,24 +64,19 @@
 <div  class="vidus">
 
   <form>
-    <p> Uz grīdas tīrīšanas līdzekļa etiķetes norādīts: <br>
-       &emsp; 1) darba šķīduma iegūšanai līdzeklis jāatšķaida ar ūdeni attiecībā 2 : 5; <br>
-       &emsp; 2) 10 m2 grīdas notīrīšanai nepieciešams 150 mL darba šķīduma.<br>
+    <p> Grafiski (1. attēls) attēlots kādas pilsētas iedzīvotāju skaits S atkarībā
+      no n, <br>
+      kur n – desmitgažu skaits kopš 1980. gada. <br>
        <br>
-      Aprēķini ūdens tilpumu, kas jāpievieno 100 mL tīrīšanas līdzekļa, lai iegūtu darba šķīdumu.
+      Vai pēc grafika iespējams nolasīt iedzīvotāju skaitu 1985.gadā?
     </p>
     <label for="1">
     <input type="radio" id="1" name="upe" value="daugava">
-    500 ml</label> 
+    JĀ </label> 
     <label for="2">
     <input type="radio" id="2" name="upe" value="gauja">
-    250 ml</label> 
-    <label for="3">
-    <input type="radio" id="3" name="upe" value="abava">
-    150 ml</label> 
-    <label for="4">
-    <input type="radio" id="4" name="upe" value="salaca">
-    750 ml</label>
+    NĒ </label> 
+    
     
     </form>
   
@@ -99,13 +94,13 @@ document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 
 
 function nakamais()
 {
-var x = document.getElementById("2").checked;
+var x = document.getElementById("1").checked;
 
-if(x==true)window.open("uzdevums2.html", "_self");
+if(x==true)window.open("uzdevums4.html", "_self");
 else{
 balles--;
 localStorage.setItem("punkti", balles);
-window.open("uzdevums2.html", "_self");
+window.open("uzdevums4.html", "_self");
 }
 }
 
@@ -135,7 +130,7 @@ function closeNav2() {
 
 </script>
 
-<div class="josla" style="width:10%;"></div>
+<div class="josla" style="width:30%;"></div>
 <div class="josla2" style="width:100%;"></div>
 
 

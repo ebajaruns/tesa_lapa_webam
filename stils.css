@@ -43,6 +43,21 @@ input[type=radio] {
   border-radius: 10%;
  }
 
+ input[type=checkbox] {
+  border: none;
+  size: 30px;
+  text-align: left;
+  font-size: 30px;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 0.75em;
+  height: 0.75em;
+  border: 0.1em solid currentColor;
+  border-radius: 10%;
+ }
+
 .sidenav {
   height: 100%;
   width: 0;
