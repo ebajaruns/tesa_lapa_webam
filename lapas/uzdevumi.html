@@ -42,7 +42,10 @@
 
 <div class="tops">
     <h1>Uzdevumu sadaļa</h1>
-  Pārbaudi savas zināšanas un gatavojies eksāmenam!<br><br>
+    <br>
+  Pārbaudi savas zināšanas un gatavojies eksāmenam!
+  Izvēlies mācību priekšmetu, kurā vēlies veikt testu! 
+ 
  <!--- <p id="punkti"></p> -->
   </div>
 
@@ -61,14 +64,18 @@
 
   
 <div  class="vidus">
-Sveiciens atpakaļ lapā, kas palīdzēs tev sagatavoties eksāmeniem!<br><br>
-Šobrīd pieejams ir viens CE pārbaudes darbs Matemātikā!<br>
-To vari atvērt caur lietotāja profilu sadaļā uzdevumi vai caur mācību priekšmetu - Matemātika!<br>
-Tev ir iespējas pārbaudīt savas zināšanu un prasmju atbilstību vidusskolas mācību standartam!<br>
-<br> 
-Lai sokas!<br>
-<br>
 
+  <form>
+
+    <button type="button"> Matemātika </button>
+    <button type="button"> Latviešu valoda </button>
+    <button type="button"> Angļu valoda </button>
+    <button type="button"> Fizika </button>
+    <button type="button"> Ķīmija </button>
+    <button type="button"> Programmēšana </button>
+  
+  </form>
+  
 </div>
 
 <!--- <button class="button" onclick="nakamais()">APSTIPRINĀT</button> --->
@@ -87,27 +94,27 @@ window.open("/lapas/uzd_1.html", "_self");
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "300px";
+  document.body.style.backgroundColor = "#97DBFF";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
+  document.body.style.backgroundColor = "#EBF8FF";
 }
 
 function openNav2() {
   document.getElementById("mySidenav2").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.body.style.backgroundColor = "#97DBFF";
 }
 
 function closeNav2() {
   document.getElementById("mySidenav2").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
+  document.body.style.backgroundColor = "#EBF8FF";
 }
 
 </script>

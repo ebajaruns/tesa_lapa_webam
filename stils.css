@@ -5,10 +5,10 @@ margin-left: 20px;
 }
 
 body {
-  background-color: c6e9af;
+  background-color: #EBF8FF;
    text-align: left;
    font-size: 20px;
-   font-family: 'Trebuchet MS', sans-serif;
+   font-family: 'Tahoma', sans-serif;
    overflow: hidden; /* Hide scrollbars */
 }
 
@@ -35,7 +35,7 @@ input[type=text] {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(189, 15, 180);
+  background-color: #9D6D7A;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -48,7 +48,7 @@ input[type=text] {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(81, 238, 94);
+  background-color: #F1807C;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -73,11 +73,11 @@ input[type=text] {
 }
 
 .sidenav a:hover {
-  color: #ec1919;
+  color: #7A525C;
 }
 
 .sidenav2 a:hover {
-  color: #ec1919;
+  color: #EE5E59;
 }
 
 .sidenav .closebtn {
@@ -209,6 +209,38 @@ span.c {
   border: 1px solid black;
   text-align: center;
   
- 
+}
 
+form {
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding-left: 40px;
+padding-top: 0px;
+
+}
+
+form button{
+  width: 400px;
+  margin: 10px;
+  font-size: x-large;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border:none;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #EBF8FF;
+}
+
+form button:hover{
+  width: 400px;
+  margin: 10px;
+  font-size: x-large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border:none;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #60B05B;
+  color: #EBF8FF;
 }
