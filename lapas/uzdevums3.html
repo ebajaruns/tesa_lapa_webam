@@ -41,12 +41,10 @@
 </div>
 
 <div class="tops">
-    <h1>Uzdevumu sadaļa</h1>
-    <br>
-  Pārbaudi savas zināšanas un gatavojies eksāmenam!
-  Izvēlies mācību priekšmetu, kurā vēlies veikt testu! 
- 
- <!--- <p id="punkti"></p> -->
+    <h1>Matemātikas uzdevums nr.3</h1>
+       
+ <br>
+<p id="punkti"></p> 
   </div>
 
 </div> 
@@ -57,7 +55,7 @@
  
  <div class="kreisa">   
 
-<!--- <img src="atteli\logo.png" alt="logo" styel="width:100%"> --->
+<img src="..\atteli\grafiks1.PNG" alt="grafiks" style="height: 300px;" > 
 
 
 </div> 
@@ -66,31 +64,49 @@
 <div  class="vidus">
 
   <form>
-
-    <button type="button"> <a href="matematikaCE.html" style="text-decoration: none; color: inherit;">  Matemātika </a> </button>
-    <button type="button"> Latviešu valoda </button>
-    <button type="button"> Angļu valoda </button>
-    <button type="button"> Fizika </button>
-    <button type="button"> Ķīmija </button>
-    <button type="button"> Programmēšana </button>
-  
-  </form>
+    <p> Uz grīdas tīrīšanas līdzekļa etiķetes norādīts: <br>
+       &emsp; 1) darba šķīduma iegūšanai līdzeklis jāatšķaida ar ūdeni attiecībā 2 : 5; <br>
+       &emsp; 2) 10 m2 grīdas notīrīšanai nepieciešams 150 mL darba šķīduma.<br>
+       <br>
+      Aprēķini ūdens tilpumu, kas jāpievieno 100 mL tīrīšanas līdzekļa, lai iegūtu darba šķīdumu.
+    </p>
+    <label for="1">
+    <input type="radio" id="1" name="upe" value="daugava">
+    500 ml</label> 
+    <label for="2">
+    <input type="radio" id="2" name="upe" value="gauja">
+    250 ml</label> 
+    <label for="3">
+    <input type="radio" id="3" name="upe" value="abava">
+    150 ml</label> 
+    <label for="4">
+    <input type="radio" id="4" name="upe" value="salaca">
+    750 ml</label>
+    
+    </form>
   
 </div>
 
-<!--- <button class="button" onclick="nakamais()">APSTIPRINĀT</button> --->
+<button class="button" onclick="nakamais()">APSTIPRINĀT</button> 
 
 </div>
 
 <br>
 
 <script>
-localStorage.setItem("punkti", 10);
-document.getElementById("punkti").innerHTML ="Tev sākumā tiek piešķirti 10 punkti";
+var balles=localStorage.getItem("punkti");
+document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 10 punktiem";
 
 function nakamais()
 {
-window.open("/lapas/uzd_1.html", "_self"); 
+var x = document.getElementById("2").checked;
+
+if(x==true)window.open("uzdevums2.html", "_self");
+else{
+balles--;
+localStorage.setItem("punkti", balles);
+window.open("uzdevums2.html", "_self");
+}
 }
 
 function openNav() {
@@ -119,7 +135,7 @@ function closeNav2() {
 
 </script>
 
-<div class="josla" style="width:100%;"></div>
+<div class="josla" style="width:10%;"></div>
 <div class="josla2" style="width:100%;"></div>
 
 

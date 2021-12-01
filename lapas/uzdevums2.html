@@ -41,12 +41,10 @@
 </div>
 
 <div class="tops">
-    <h1>Uzdevumu sadaļa</h1>
-    <br>
-  Pārbaudi savas zināšanas un gatavojies eksāmenam!
-  Izvēlies mācību priekšmetu, kurā vēlies veikt testu! 
- 
- <!--- <p id="punkti"></p> -->
+    <h1>Matemātikas uzdevums nr.2</h1>
+       
+ <br>
+<p id="punkti"></p> 
   </div>
 
 </div> 
@@ -66,31 +64,38 @@
 <div  class="vidus">
 
   <form>
+    <p> Aprēķini izteiksmes 5*3/4 aptuveno vērtību, izmantojot kalkulatoru. <br>
+       Rezultātu noapaļo ar precizitāti līdz desmitdaļām <br>
+       <br>
+       <br>
 
-    <button type="button"> <a href="matematikaCE.html" style="text-decoration: none; color: inherit;">  Matemātika </a> </button>
-    <button type="button"> Latviešu valoda </button>
-    <button type="button"> Angļu valoda </button>
-    <button type="button"> Fizika </button>
-    <button type="button"> Ķīmija </button>
-    <button type="button"> Programmēšana </button>
-  
-  </form>
+       <input type="text" id="teksts" Value="ievadi izteiksmi">
+    
+    </form>
   
 </div>
 
-<!--- <button class="button" onclick="nakamais()">APSTIPRINĀT</button> --->
+<button class="button" onclick="nakamais()">APSTIPRINĀT</button> 
 
 </div>
 
 <br>
 
 <script>
-localStorage.setItem("punkti", 10);
-document.getElementById("punkti").innerHTML ="Tev sākumā tiek piešķirti 10 punkti";
+var balles=localStorage.getItem("punkti");
+document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 10 punktiem";
 
 function nakamais()
 {
-window.open("/lapas/uzd_1.html", "_self"); 
+  var x = document.getElementById("teksts").value;
+
+if(x == 3.3)window.open("uzdevums3.html", "_self");
+
+else{
+balles--;
+localStorage.setItem("punkti", balles);
+window.open("gameover.html", "_self");
+}
 }
 
 function openNav() {
@@ -119,7 +124,7 @@ function closeNav2() {
 
 </script>
 
-<div class="josla" style="width:100%;"></div>
+<div class="josla" style="width:20%;"></div>
 <div class="josla2" style="width:100%;"></div>
 
 
