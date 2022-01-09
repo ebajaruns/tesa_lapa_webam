@@ -41,10 +41,10 @@
 </div>
 
 <div class="tops">
-    <h1>Matemātikas uzdevums nr.2</h1>
+    <h1>Matemātikas CE testa kopsavilkums</h1>
        
  <br>
-<p id="punkti"></p> 
+
   </div>
 
 </div> 
@@ -55,7 +55,7 @@
  
  <div class="kreisa">   
 
-<!--- <img src="atteli\logo.png" alt="logo" styel="width:100%"> --->
+
 
 
 </div> 
@@ -64,18 +64,17 @@
 <div  class="vidus">
 
   <form>
-    <p> Aprēķini izteiksmes 5*3/4 aptuveno vērtību, izmantojot kalkulatoru. <br>
-       Rezultātu noapaļo ar precizitāti līdz desmitdaļām <br>
-       <br>
-       <br>
-
-       <input type="text" id="teksts" Value="ievadi izteiksmi">
+    <p> Tava rezultāta kopsavilkums ir sekojošs: <br>
+      
+      <p id="punkti"></p> 
+      
+   
     
     </form>
   
 </div>
 
-<button class="button" onclick="nakamais()">APSTIPRINĀT</button> 
+<button class="button" onclick="nakamais()">UZ SĀKUMU</button> 
 
 </div>
 
@@ -83,20 +82,22 @@
 
 <script>
 var balles=localStorage.getItem("punkti");
-document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 5 punktiem";
+
+
+if (balles<=2){
+  document.getElementById("punkti").innerHTML = "Tu esi ieguvis " +balles+ " no iespējamiem 5 punktiem! <br/> Tavs rezultāts ir kritiski zems un tev nepieciešams uzlabot prasmes matemātikā!";
+}
+if (balles>2){
+  document.getElementById("punkti").innerHTML = "Tu esi ieguvis " +balles+ " no iespējamiem 5 punktiem! <br/> Tavs rezultāts ir labs un tu esi gatavs centralizētajam eksāmenam matemātikā!";
+}
+
 
 function nakamais()
 {
-  var x = document.getElementById("teksts").value;
 
-if(x == "3.3" || x == "3,3" )window.open("uzdevums3.html", "_self");
+window.open("../index.html", "_self");
+}
 
-else{
-balles--;
-localStorage.setItem("punkti", balles);
-window.open("uzdevums3.html", "_self");
-}
-}
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
@@ -124,7 +125,7 @@ function closeNav2() {
 
 </script>
 
-<div class="josla" style="width:40%;"></div>
+<div class="josla" style="width:100%;"></div>
 <div class="josla2" style="width:100%;"></div>
 
 

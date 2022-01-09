@@ -93,17 +93,18 @@ Pēc grafika mēs varam pateikt iedzīvotāju skaitu 2020.gadā.</label>
 
 <script>
 var balles=localStorage.getItem("punkti");
-document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 10 punktiem";
+document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 5 punktiem";
 
 function nakamais()
 {
-var x = document.getElementById("2").checked;
+var x = document.getElementById("1").checked;
+var y = document.getElementById("4").checked;
 
-if(x==true)window.open("uzdevums2.html", "_self");
+if(x==true && y==true)window.open("uzdevums5.html", "_self");
 else{
 balles--;
 localStorage.setItem("punkti", balles);
-window.open("uzdevums2.html", "_self");
+window.open("uzdevums5.html", "_self");
 }
 }
 
@@ -133,7 +134,7 @@ function closeNav2() {
 
 </script>
 
-<div class="josla" style="width:10%;"></div>
+<div class="josla" style="width:80%;"></div>
 <div class="josla2" style="width:100%;"></div>
 
 

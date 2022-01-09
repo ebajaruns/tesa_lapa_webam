@@ -65,10 +65,11 @@ input[type=radio] {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #9D6D7A;
+  background-color: #97dbff;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  border-radius: 20px;
 }
 
 .sidenav2 {
@@ -78,10 +79,11 @@ input[type=radio] {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #F1807C;
+  background-color: #97dbff;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  border-radius: 20px;
 }
 
 .sidenav a {
@@ -91,6 +93,8 @@ input[type=radio] {
   color: #000000;
   display: block;
   transition: 0.3s;
+  border: #EE5E59;
+  border-radius: 20px;
 }
 
 .sidenav2 a {
@@ -100,6 +104,13 @@ input[type=radio] {
   color: #000000;
   display: block;
   transition: 0.3s;
+  border: #EE5E59;
+  border-radius: 20px;
+}
+
+#saite{
+  border-radius: 20px;
+  background-color: #60B05B;
 }
 
 .sidenav a:hover {
@@ -109,6 +120,7 @@ input[type=radio] {
 .sidenav2 a:hover {
   color: #EE5E59;
 }
+
 
 .sidenav .closebtn {
   position: absolute;
@@ -271,6 +283,7 @@ form button:hover{
   padding-top: 10px;
   padding-bottom: 10px;
   border:none;
+  border-radius: 20px;
   display: inline-block;
   cursor: pointer;
   background-color: #60B05B;

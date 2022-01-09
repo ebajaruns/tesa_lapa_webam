@@ -41,7 +41,7 @@
 </div>
 
 <div class="tops">
-    <h1>Matemātikas uzdevums nr.2</h1>
+    <h1>Matemātikas uzdevums nr.4</h1>
        
  <br>
 <p id="punkti"></p> 
@@ -55,7 +55,7 @@
  
  <div class="kreisa">   
 
-<!--- <img src="atteli\logo.png" alt="logo" styel="width:100%"> --->
+  <img src="..\atteli\grafiks2.PNG" alt="grafiks" style="height: 300px;" > 
 
 
 </div> 
@@ -64,12 +64,26 @@
 <div  class="vidus">
 
   <form>
-    <p> Aprēķini izteiksmes 5*3/4 aptuveno vērtību, izmantojot kalkulatoru. <br>
-       Rezultātu noapaļo ar precizitāti līdz desmitdaļām <br>
+    <p> Absolūtā biežuma histogrammā apkopoti
+      studentu rezultāti testā (5. attēls). <br>
+      
        <br>
-       <br>
-
-       <input type="text" id="teksts" Value="ievadi izteiksmi">
+      Cik studenti pildīja testu? 
+    </p>
+    <label for="1">
+      <input type="radio" id="1" name="upe" value="daugava">
+      70 </label> 
+      <label for="2">
+      <input type="radio" id="2" name="upe" value="gauja">
+      45 </label> 
+      <label for="3">
+      <input type="radio" id="3" name="upe" value="abava">
+      55 </label> 
+      <label for="4">
+      <input type="radio" id="4" name="upe" value="salaca">
+      65 </label>
+      
+   
     
     </form>
   
@@ -87,14 +101,14 @@ document.getElementById("punkti").innerHTML = "Iegūtie punkti: " +balles+ " no 
 
 function nakamais()
 {
-  var x = document.getElementById("teksts").value;
+var x = document.getElementById("3").checked;
 
-if(x == "3.3" || x == "3,3" )window.open("uzdevums3.html", "_self");
 
+if(x==true)window.open("kopsavilkums.html", "_self");
 else{
 balles--;
 localStorage.setItem("punkti", balles);
-window.open("uzdevums3.html", "_self");
+window.open("kopsavilkums.html", "_self");
 }
 }
 
@@ -124,7 +138,7 @@ function closeNav2() {
 
 </script>
 
-<div class="josla" style="width:40%;"></div>
+<div class="josla" style="width:100%;"></div>
 <div class="josla2" style="width:100%;"></div>
 
 
